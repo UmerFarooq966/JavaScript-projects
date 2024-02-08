@@ -23,18 +23,24 @@
 
     <div class="container ">
         <div class="row d-flex justify-content-center">
-            <div class="col-md-6  ">
+            <div class="col-md-6 ">
                 <h1 class="display-4 text-center mb-3">Weight Converter</h1>
                 <form>
                     <div class="form-group">
-                        <input id="lbsInput" type="number" class="form-control form-control-lg"
-                            placeholder="Enter Pounds">
+                        <input id="Input" type="number" class="form-control form-control-lg" placeholder="Enter Weight">
+                        <select class="form-select form-select-mb mt-3" name="weighttype" id="weighttype" disabled>
+                            <option selected>Select the type of Weight you entered </option>
+                            <option value="lbs">Pounds</option>
+                            <option value="gm">Pounds</option>
+                            <option value="kg">Kilogram</option>
+                            <option value="oz">Ounces</option>
+                        </select>
                     </div>
                 </form>
                 <div id="output" class="my-5">
                     <div class="card text-bg-primary p-5 mt-3">
                         <div class="card-block">
-                            <h4>Grams:</h4>
+                            <h4 id="gm">Grams:</h4>
                             <div id="gramsOutput">
 
                             </div>
@@ -42,7 +48,7 @@
                     </div>
                     <div class="card text-bg-success p-5 mt-3">
                         <div class="card-block">
-                            <h4>Killograms:</h4>
+                            <h4 id="kg">Killograms:</h4>
                             <div id="kgOutput">
 
                             </div>
@@ -50,7 +56,7 @@
                     </div>
                     <div class="card text-bg-danger p-5 mt-3">
                         <div class="card-block">
-                            <h4>Ouncs:</h4>
+                            <h4 id="oz">Ounces:</h4>
                             <div id="ozOutput">
 
                             </div>
