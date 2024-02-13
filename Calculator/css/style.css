@@ -37,10 +37,11 @@ main {
   border-radius: 15px;
   box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.534);
   margin-bottom: 100px;
+  padding-top: 5px;
 }
 
 main .container {
-  padding: 15px;
+  padding: 5px 15px;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
