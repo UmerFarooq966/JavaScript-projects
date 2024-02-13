@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background: #2c3e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fd746c,
+    #2c3e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fd746c,
+    #67b0fa
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  padding: 10px 10px 30px;
+  color: rgb(250, 250, 250);
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.76);
+  border-radius: 15px;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.534);
+  margin-bottom: 100px;
+}
+
+main .container {
+  padding: 15px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .container .calc-header input {
+  outline: none;
+  border: none;
+  padding: 20px 20px;
+  width: 300px;
+  border-radius: 10px;
+  color: #ffff;
+  background-color: rgba(107, 107, 107, 0);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.226);
+}
+
+main .container .calc-body .container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: start;
+  column-gap: 10px;
+}
+
+main .container .calc-body .container .numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+main .container .calc-body .container .numbers .number {
+  background-color: rgb(255, 187, 0);
+  padding: 20px 25px;
+  margin: 5px;
+  border-radius: 50px;
+  color: black;
+  cursor: pointer;
+}
+
+main .container .calc-body .container .numbers .number:last-child {
+  width: 100%;
+  grid-column: 1/4;
+}
+
+main .container .calc-body .container .numbers .number:hover {
+  background-color: rgb(255, 153, 0);
+}
+
+main .container .calc-body .container .signs {
+  display: flex;
+  flex-direction: column;
+}
+
+main .container .calc-body .container .signs .sign {
+  background-color: rgb(255, 145, 0);
+  padding: 20px 20px;
+  margin: 5px;
+  border-radius: 50px;
+  color: black;
+  cursor: pointer;
+}
+main .container .calc-body .container .signs:last-child {
+  padding: 10px 50px;
+}
+
+main .container .calc-body .container .signs .sign:hover {
+  background-color: #fdd835;
+}
+
+.clear {
+  background-color: rgb(253, 255, 126);
+  padding: 20px 25px;
+  margin: 5px;
+  border-radius: 50px;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  top: 100%;
+  transform: translate(0%, -110%);
+}
+
+.clear:hover {
+  background-color: rgb(253, 220, 73);
+}
